@@ -14,6 +14,36 @@ Next, **add media** (either an image of a GIF) with the rendered components, so 
 
 ![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
 
+
+## Layout Order
+### Desktop
+#### Grid 1
+
+![image](https://user-images.githubusercontent.com/62782975/174391271-29f30902-8532-4f77-91ba-5295450d5472.png)
+
+#### Grid 2
+
+![image](https://user-images.githubusercontent.com/62782975/174391494-bc8667f8-bd34-4062-8a10-99a0e0550754.png)
+
+#### Grid 3
+
+![image](https://user-images.githubusercontent.com/62782975/174391545-aef5d970-74eb-4bcf-b2b2-256ced49a3ba.png)
+
+#### Grid 4
+
+![image](https://user-images.githubusercontent.com/62782975/174391602-a3cd5836-09bc-4d42-82cb-6ba82549ad12.png)
+
+### Mobile
+
+![image](https://user-images.githubusercontent.com/62782975/174391721-9deb561d-d3e9-4650-b149-f7026d392014.png)
+
+![image](https://user-images.githubusercontent.com/62782975/174391750-179e2292-539c-4200-b99d-3b3ea6864927.png)
+
+
+
+
+
+
 ## Configuration 
 
 In this section, you first must **add the primary instructions** that will allow users to use the app's blocks in their store, such as:
