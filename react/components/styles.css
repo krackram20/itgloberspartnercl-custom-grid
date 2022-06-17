@@ -1,9 +1,13 @@
 .desktop__cards__container {
  display: flex;
  height: 500px;
+ width: 90%;
+ margin-left: 5%;
+ margin-right: 5%;
  flex-direction: column;
- flex-wrap: wrap;
+ flex-wrap: nowrap;
  align-items: center;
+ margin-bottom: 15px;
 }
 
 /* first grid type desktop */
@@ -16,18 +20,22 @@
 
 .desktop_1_card_2 {
   height: 50%;
+  width: 30%;
 }
 
 .desktop_1_card_3 {
   height: 50%;
+  width: 30%;
 }
 
 .desktop_1_card_4 {
   height: 50%;
+  width: 30%;
 }
 
 .desktop_1_card_5 {
   height: 50%;
+  width: 30%;
 }
 
 /* second grid type desktop */
@@ -41,21 +49,25 @@
 
 .desktop_2_card_2 {
   height: 50%;
+  width: 30%;
   order: 1;
 }
 
 .desktop_2_card_3 {
   height: 50%;
+  width: 30%;
   order: 2 ;
 }
 
 .desktop_2_card_4 {
   height: 50%;
+  width: 30%;
   order: 4;
 }
 
 .desktop_2_card_5 {
   height: 50%;
+  width: 30%;
   order: 5;
 }
 
@@ -70,21 +82,25 @@
 
 .desktop_3_card_2 {
   height: 50%;
+  width: 30%;
   order: 1;
 }
 
 .desktop_3_card_3 {
   height: 50%;
+  width: 30%;
   order: 2;
 }
 
 .desktop_3_card_4 {
   height: 50%;
+  width: 30%;
   order: 3;
 }
 
 .desktop_3_card_5 {
   height: 50%;
+  width: 30%;
   order: 4;
 }
 
@@ -103,14 +119,17 @@
 
 .desktop_4_card_3 {
   height: 100%;
+  width: 25%;
 }
 
 .desktop_4_card_4 {
   height: 50%;
+  width: 25%;
 }
 
 .desktop_4_card_5 {
   height: 50%;
+  width: 25%;
 }
 
 
@@ -120,6 +139,7 @@
   display: flex;
  flex-direction: column;
  align-items: center;
+ margin-bottom: 15px;
 }
 
 

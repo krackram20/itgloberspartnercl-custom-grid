@@ -5,39 +5,41 @@ import { useCssHandles } from 'vtex.css-handles'
 
 const CustomCard = (
   {src,
-  cardName,
   title,
   description,
   callToAction,
-  buttonText}: CardType) => {
+  buttonText,
+  nameClass}: CardType) => {
 
   const CSS_HANDLES = [
                       'image',
                       'title',
                       'description',
                       'callToAction',
-                      'button'
+                      'button',
+                      'main__container'
                      ]
 
   const handles = useCssHandles(CSS_HANDLES)
 
-  const cardClassNames: [string,string,string,string,string] = [
+  const cardClassNames: [string,string,string,string,string, string] = [
                           handles.image,
                           handles.title,
                           handles.description,
                           handles.callToAction,
-                          handles.button
+                          handles.button,
+                          handles.main__container
                         ]
 
   return (
     <Card
     src={src}
-    cardName = {cardName}
     title = {title}
     description = {description}
     callToAction = {callToAction}
     buttonText = {buttonText}
     cssHandles = {cardClassNames}
+    nameClass = {nameClass}
     />
    )
   }
