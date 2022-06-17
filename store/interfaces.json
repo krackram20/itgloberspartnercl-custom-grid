@@ -1,0 +1,10 @@
+{
+  "custom-grid-cards":{
+    "component": "CustomCard",
+    "render": "client"
+  },
+  "cards-layout": {
+    "component": "CardsLayout",
+    "composition": "children"
+  }
+}

@@ -1,0 +1,238 @@
+.desktop__cards__container {
+ display: flex;
+ height: 500px;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+}
+
+/* first grid type desktop */
+
+.desktop_1_card_1 {
+
+  width: 40%;
+  height: 100%;
+}
+
+.desktop_1_card_2 {
+  height: 50%;
+}
+
+.desktop_1_card_3 {
+  height: 50%;
+}
+
+.desktop_1_card_4 {
+  height: 50%;
+}
+
+.desktop_1_card_5 {
+  height: 50%;
+}
+
+/* second grid type desktop */
+
+.desktop_2_card_1 {
+
+  width: 40%;
+  height: 100%;
+  order: 3;
+}
+
+.desktop_2_card_2 {
+  height: 50%;
+  order: 1;
+}
+
+.desktop_2_card_3 {
+  height: 50%;
+  order: 2 ;
+}
+
+.desktop_2_card_4 {
+  height: 50%;
+  order: 4;
+}
+
+.desktop_2_card_5 {
+  height: 50%;
+  order: 5;
+}
+
+/* third grid type desktop */
+
+.desktop_3_card_1 {
+
+  width: 40%;
+  height: 100%;
+  order: 5;
+}
+
+.desktop_3_card_2 {
+  height: 50%;
+  order: 1;
+}
+
+.desktop_3_card_3 {
+  height: 50%;
+  order: 2;
+}
+
+.desktop_3_card_4 {
+  height: 50%;
+  order: 3;
+}
+
+.desktop_3_card_5 {
+  height: 50%;
+  order: 4;
+}
+
+/* fourth grid type desktop */
+
+.desktop_4_card_1 {
+
+  width: 50%;
+  height: 50%;
+}
+
+.desktop_4_card_2 {
+  height: 50%;
+  width: 50%;
+}
+
+.desktop_4_card_3 {
+  height: 100%;
+}
+
+.desktop_4_card_4 {
+  height: 50%;
+}
+
+.desktop_4_card_5 {
+  height: 50%;
+}
+
+
+/* mobile layouts */
+
+.mobile__cards__container {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+
+
+/* second grid type mobile */
+
+.mobile_2_card_1 {
+    order: 5;
+}
+
+.mobile_2_card_2 {
+  order: 4;
+}
+
+.mobile_2_card_3 {
+  order: 3;
+}
+
+.mobile_2_card_4 {
+  order: 2;
+}
+
+.mobile_2_card_5 {
+  order: 1;
+}
+
+/* third grid type mobile */
+
+.mobile_3_card_1 {
+  order: 2;
+}
+
+.mobile_3_card_2 {
+  order: 3
+}
+
+.mobile_3_card_3 {
+  order: 4
+}
+
+.mobile_3_card_4 {
+  order: 5
+}
+
+.mobile_3_card_5 {
+  order: 1
+}
+
+/* fourth grid type mobile */
+
+.mobile_4_card_1 {
+  order:3
+
+}
+
+.mobile_4_card_2 {
+  order:4
+}
+
+.mobile_4_card_3 {
+  order:5
+}
+
+.mobile_4_card_4 {
+  order:1
+}
+
+.mobile_4_card_5 {
+  order:2
+}
+
+/* fifth grid type mobile */
+
+.mobile_5_card_1 {
+  order:1
+
+}
+
+.mobile_5_card_2 {
+  order:3
+}
+
+.mobile_5_card_3 {
+  order:5
+}
+
+.mobile_5_card_4 {
+  order:2
+}
+
+.mobile_5_card_5 {
+  order:4
+}
+
+/* sixth grid type mobile */
+
+.mobile_6_card_1 {
+  order:2
+
+}
+
+.mobile_6_card_2 {
+  order:4
+}
+
+.mobile_6_card_3 {
+  order:5
+}
+
+.mobile_6_card_4 {
+  order:3
+}
+
+.mobile_6_card_5 {
+  order:1
+}
