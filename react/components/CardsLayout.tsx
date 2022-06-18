@@ -21,7 +21,9 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props)
       :
         styles["desktop__cards__container"]
       }>
-      {children.map((card: ReactNode, index) => {
+      {
+
+      children.map((card: ReactNode, index) => {
     return (
       <div key = {index}
       className = {
@@ -34,10 +36,12 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props)
         {card}
       </div>
     )
+
   }
   )}
     </div>
   )
+
 }
 
 CardsLayout.schema  = {
