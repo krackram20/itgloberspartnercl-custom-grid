@@ -7,8 +7,9 @@ import  { CardType} from './Card'
 
 
 
+
 interface Props {
-  children: Array<any>
+  children: any[]
   gridTypeDesktop: number,
   gridTypeMobile: number
 }
@@ -22,7 +23,7 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props)
 
 
   // filters out non card blocks accoridng to the children id
-  let cards = children.filter(child => child.props.id.includes('card'))
+   let cards = children.filter(child => child.props.id.includes('card'))
   
   // avoids rendering more than 5 cards
   cards.length > 5 ? cards = cards.slice(0,5) : cards = cards
@@ -40,8 +41,7 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props)
         styles["desktop__cards__container"]
       }>
       {
-
-      cards.map((card: CardType, index) => {
+         cards.map((card: CardType, index) => {
 
 
         return (

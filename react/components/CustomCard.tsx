@@ -45,10 +45,10 @@ const CustomCard = (
   }
 
 CustomCard.schema = {
-  title : "Card",
-  type : "object",
-  properties : {
-    src : {
+  title: "Card",
+  type: "object",
+  properties: {
+    src: {
       title: "Upload image",
       type: 'string',
       widget : {
@@ -56,12 +56,12 @@ CustomCard.schema = {
       }
     },
 
-    title : {
+    title: {
       title: "Card title",
       type: 'string'
     },
 
-    description : {
+    description: {
       title: "Write a decription",
       type: 'string',
       widget : {

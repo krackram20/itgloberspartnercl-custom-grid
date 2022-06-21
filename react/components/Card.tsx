@@ -24,7 +24,7 @@ const Card = ({
 } : CardType) => {
 
   return (
-    <div className= { cssHandles[5]}>
+    <div className= { nameClass ? `${cssHandles[5]}__${nameClass}` : cssHandles[5] }>
       <img
         src={src} alt="card image"
         className= {nameClass ? `${cssHandles[0]}__${nameClass}` : cssHandles[0] } />
