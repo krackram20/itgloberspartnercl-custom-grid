@@ -1,9 +1,12 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { useDevice } from 'vtex.device-detector'
 import styles from './styles.css'
+import { CardType} from './Card'
 
-type Props = {
-  children: [ReactNode],
+
+
+interface Props {
+  children: CardType[]
   gridTypeDesktop: number,
   gridTypeMobile: number
 }
@@ -23,19 +26,21 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props)
       }>
       {
 
-      children.map((card: ReactNode, index) => {
-    return (
-      <div key = {index}
-      className = {
-        isMobile
-      ?
-        styles[`mobile_${gridTypeMobile}_card_${index + 1}`]
-      :
-        styles[`desktop_${gridTypeDesktop}_card_${index + 1}`]
-        }>
-        {card}
-      </div>
-    )
+      children.filter(x => typeof x !=='string').map((card: CardType, index) => {
+
+
+        return (
+          <div key = {index}
+          className = {
+            isMobile
+          ?
+            styles[`mobile_${gridTypeMobile}_card_${index + 1}`]
+          :
+            styles[`desktop_${gridTypeDesktop}_card_${index + 1}`]
+            }>
+            {card}
+          </div>
+        )
 
   }
   )}
