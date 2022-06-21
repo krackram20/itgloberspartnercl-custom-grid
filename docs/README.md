@@ -10,7 +10,7 @@
 
 This component displays five cards and allows them to be arranged in five diferent ways in desktop and six different ways in mobile. 
 
-![image](https://user-images.githubusercontent.com/62782975/174899170-58609bcb-67dd-42dd-9dad-3255954266f5.png)
+![image](https://user-images.githubusercontent.com/62782975/174902578-ba840f38-0bab-42df-a9b1-ec3ae909c54b.png)
 
 
 
