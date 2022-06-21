@@ -1,18 +1,17 @@
 import React from 'react'
 
-export interface CardType {
+export type CardType = {
 
-    src: string,
-    title: string,
-    description: string,
-    callToAction: string,
-    buttonText: string,
+    src?: string,
+    title?: string,
+    description?: string,
+    callToAction?: string,
+    buttonText?: string,
     cssHandles: [string,
     string, string, string, string, string],
-    nameClass: string
-
-
+    nameClass?: string
 }
+
 
 const Card = ({
   src,

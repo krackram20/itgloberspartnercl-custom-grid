@@ -1,19 +1,34 @@
 import React from "react";
 import { useDevice } from 'vtex.device-detector'
 import styles from './styles.css'
-import { CardType} from './Card'
+import  { CardType} from './Card'
+
+
 
 
 
 interface Props {
-  children: CardType[]
+  children: Array<any>
   gridTypeDesktop: number,
   gridTypeMobile: number
 }
 
+
+
+
 const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props) => {
 
   const { isMobile } = useDevice()
+
+
+  // filters out non card blocks accoridng to the children id
+  let cards = children.filter(child => child.props.id.includes('card'))
+  
+  // avoids rendering more than 5 cards
+  cards.length > 5 ? cards = cards.slice(0,5) : cards = cards
+
+
+  
 
   return (
     <div
@@ -26,7 +41,7 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props)
       }>
       {
 
-      children.filter(x => typeof x !=='string').map((card: CardType, index) => {
+      cards.map((card: CardType, index) => {
 
 
         return (
@@ -48,6 +63,7 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1}: Props)
   )
 
 }
+
 
 CardsLayout.schema  = {
   title: "Card Grid",
@@ -80,8 +96,13 @@ CardsLayout.schema  = {
       ]
 
     }
-  }
-}
+
+    
+        }
+      }
+    
+  
+
 
 
 export default CardsLayout

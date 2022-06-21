@@ -58,10 +58,7 @@ CustomCard.schema = {
 
     title : {
       title: "Card title",
-      type: 'string',
-      widget : {
-        "ui:widget": "textarea"
-      }
+      type: 'string'
     },
 
     description : {
@@ -74,18 +71,12 @@ CustomCard.schema = {
 
     callToAction : {
       title: "Call to action url",
-      type: 'string',
-      widget : {
-        "ui:widget": "textarea"
-      }
+      type: 'string'
     },
 
     buttonText : {
       title: "Call to action text",
-      type: 'string',
-      widget : {
-        "ui:widget": "textarea"
-      }
+      type: 'string'
     }
   }
 }
