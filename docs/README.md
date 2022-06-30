@@ -48,32 +48,36 @@ This component displays five cards and allows them to be arranged in five difere
 In order to use this component you must:
 
 1. Add the dependency `"itgloberspartnercl.grid-custom": "0.x"` to `manifest.json`;
-2. Declare the block `cards-layout`.
-3. Declare in children the `custom-grid-cards` blocks
-Only `custom-grid-cards` blocks  can be rendered inside  `cards-layout`and only 5 cards can be used.
+2. Declare the block `cards-grid`.
+3. Declare the `card-item` blocks as children (or other type of blocks when onlyCardItemsAllowed is set to false)
+
+Only up to  five cards cards can be used, if there are more than five children it will render the first five.
 
 
 
-### `cards-layout` props
+### `cards-grid` props
 
-![image](https://user-images.githubusercontent.com/62782975/174901494-041327a5-09a0-43bc-bf3d-3594dd7e64de.png)
+
+![image](https://user-images.githubusercontent.com/62782975/176581410-db6935ab-6fb7-4f03-9d63-d42a3e1943b5.png)
 
 
 | Prop name    | Type            | Description    | Default value                                                                                                                               |
 | ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
 | `GridTypeDesktop`      | `number`       | number of the grid type for desktop (see images above)     | `1`        |
 | `GridTypeMobile`      | `number`       | number of the grid type for mobile (see images above)     | `1`        |
+| `onlyCardItemsAllowed`      | `boolean`       | When false allows other type of blocks (rich-text, images, infocards, etc) as children. When true only card-item blocks will render  | `true`        |
 
 
-### `custom-grid-cards` props
+### `card-item` props
 
-![image](https://user-images.githubusercontent.com/62782975/174901553-a0ac649e-aec2-436e-be54-fdd44d0f995b.png)
+![image](https://user-images.githubusercontent.com/62782975/176581312-431f8f6d-7696-42b3-9eab-2b27e9282c93.png)
+
 
 
 | Prop name    | Type            | Description    | Default value                                                                                                                               |
 | ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
 | `src`      | `string`       | path to the image         | `XXXXXX`        |
-| `title`      | `stringr`       | title of card)     | `XXXXXX`        |
+| `title`      | `stringr`       | card title     | `XXXXXX`        |
 | `description`      | `string`       | brief explanation of the card   | `XXXXXX`        |
 | `nameClass`      | `string`       |     css styling classname | `XXXXXX`        |
 | `callToAction`      | `string`       | redirect url    | `XXXXXX`        |
