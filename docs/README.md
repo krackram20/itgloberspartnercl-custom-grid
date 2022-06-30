@@ -63,7 +63,7 @@ Only up to  five cards cards can be used, if there are more than five children i
 
 | Prop name    | Type            | Description    | Default value                                                                                                                               |
 | ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `GridTypeDesktop`      | `number`       | number of the grid type for desktop (see images above)     | `1`        |
+| `GridTypeDesktop`      | `number`       | number of the grid type for desktop (see images above)     | `3`        |
 | `GridTypeMobile`      | `number`       | number of the grid type for mobile (see images above)     | `1`        |
 | `onlyCardItemsAllowed`      | `boolean`       | When false allows other type of blocks (rich-text, images, infocards, etc) as children. When true only card-item blocks will render  | `true`        |
 
