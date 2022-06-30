@@ -1,9 +1,9 @@
 {
-  "custom-grid-cards":{
-    "component": "CustomCard",
+  "card-item":{
+    "component": "CardItem",
     "render": "client"
   },
-  "cards-layout": {
+  "cards-grid": {
     "component": "CardsLayout",
     "composition": "children"
   }
