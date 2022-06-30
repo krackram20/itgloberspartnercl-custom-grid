@@ -46,7 +46,7 @@ const CardItem = ({
               {title}
           </p>
 
-          <p className={`${handles.main__container}__${nameClass}`} >
+          <p className={`${handles.description}__${nameClass}`} >
             {description}
           </p>
 
