@@ -27,13 +27,13 @@ const CardItem = ({
       'description',
       'callToAction',
       'button',
-      'main__container'
+      'card__container'
     ]
 
     const handles = useCssHandles(CSS_HANDLES)
 
       return (
-        <div className= {`${handles.main__container}__${nameClass}`}>
+        <div className= {`${handles.card__container}__${nameClass}`}>
           <img
             style = {{
               maxHeight: "80%",
