@@ -8,7 +8,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
-This component displays five cards and allows them to be arranged in five diferent ways in desktop and six different ways in mobile. 
+This component displays five cards and allows them to be arranged in four diferent ways in desktop and six different ways in mobile. 
 
 ![image](https://user-images.githubusercontent.com/62782975/176753387-ffa32012-5ace-4412-9e50-a26231606f4e.png)
 
