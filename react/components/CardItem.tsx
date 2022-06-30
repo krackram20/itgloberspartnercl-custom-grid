@@ -33,20 +33,39 @@ const CardItem = ({
     const handles = useCssHandles(CSS_HANDLES)
 
       return (
-        <div className= {`${handles.card__container}__${nameClass}`}>
+        <div className= {`${handles.card__container}__${nameClass}`}
+         style = {{
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignContent: "center",
+          alignItems: 'center'
+        }}>
           <img
             style = {{
-              maxHeight: "80%",
-              maxWidth:"80%"
+              maxHeight: "100%",
+              maxWidth:"100%",
+              height: "50%",
+              width: "70%"
             }}
             src={src} alt="card image"
             className= {`${handles.image}__${nameClass}` } />
 
-          <p className={`${handles.title}__${nameClass}`} >
+          <p className={`${handles.title}__${nameClass}`}
+           style = {{
+             marginTop: "3px",
+             marginBottom: "4px"
+            }} >
               {title}
           </p>
 
-          <p className={`${handles.description}__${nameClass}`} >
+          <p className={`${handles.description}__${nameClass}`}
+          style = {{
+            marginTop: "0px",
+            marginBottom: "4px"
+          }} >
             {description}
           </p>
 

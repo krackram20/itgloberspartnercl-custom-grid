@@ -1,5 +1,6 @@
 import React from "react";
 import { useDevice } from 'vtex.device-detector'
+import { useCssHandles } from 'vtex.css-handles'
 import styles from './styles.css'
 
 
@@ -15,8 +16,20 @@ const CardsLayout = ({children, gridTypeDesktop = 3, gridTypeMobile = 1, onlyCar
 
   const { isMobile } = useDevice()
 
-  const mainContainerClass =  isMobile ? styles["mobile__cards__container"] : styles["desktop__cards__container"]
+  const CSS_HANDLES = [
+    'grid__desktop',
+    'grid__mobile'
+  ]
 
+  const handles = useCssHandles(CSS_HANDLES)
+
+  const mainContainerClass = (
+      isMobile
+      ?
+      `${styles["mobile__cards__container"]} ${handles.grid__mobile}`
+      :
+      `${styles["desktop__cards__container"]} ${handles.grid__desktop}`
+  )
 
   // filters out non card-item blocks
   if (onlyCardItemsAllowed) {children = children.filter(child => child.props.id.includes('card-item'))}
