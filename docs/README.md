@@ -60,8 +60,28 @@ Only up to  five cards cards can be used, if there are more than five children i
 
 ### `cards-grid` props
 
+     "cards-grid": 
+      {
+ 
+        "title": "Custom Card Grid",
+        
+        "children":[
+            "card-item#one",
+            "card-item#two",
+            "card-item#three",
+            "card-item#four",
+            "card-item#five"
+            ],  
+            
+        "props": {
+            "gridTypeMobile": 2,
+            "gridTypeDesktop": 2,
+            "onlyCardItemsAllowed": false
+        }
+    }
 
-![image](https://user-images.githubusercontent.com/62782975/176581410-db6935ab-6fb7-4f03-9d63-d42a3e1943b5.png)
+
+
 
 
 | Prop name    | Type            | Description    | Default value                                                                                                                               |
@@ -73,7 +93,17 @@ Only up to  five cards cards can be used, if there are more than five children i
 
 ### `card-item` props
 
-![image](https://user-images.githubusercontent.com/62782975/176581312-431f8f6d-7696-42b3-9eab-2b27e9282c93.png)
+    "card-item#one": {
+        "title": "Card One",
+        "props":{
+            "src": "assets/custom-grid/fridges.jpeg",
+            "title": "Fridges",
+            "description": "Get the best fridges on the market",
+            "callToAction": "/electrodomesticos/neveras",
+            "buttonText": "shop fridges",
+            "nameClass" : "one"
+        }
+    }
 
 
 
